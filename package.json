@@ -1,0 +1,43 @@
+{
+  "name": "gatsyby-typescript-template",
+  "description": "gatsyby with typescript and tslint",
+  "version": "1.0.0",
+  "author": "Ryo Ikeura",
+  "dependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.8",
+    "@types/react-helmet": "^5.0.7",
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-typescript": "^2.0.0",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-remark": "^2.1.5",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "typescript": "^3.1.1"
+  },
+  "keywords": [
+    "gatsby, typescript"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "fix": "prettier --write \"src/**/*.{ts,tsx,md}\" && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json"
+  },
+  "devDependencies": {
+    "husky": "^1.1.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "tslint-config-blvd": "^1.2.1",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0"
+  }
+}
