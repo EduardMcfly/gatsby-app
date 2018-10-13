@@ -1,9 +1,10 @@
 ### Description
-This is a standard starter with Typescript, TSLint, Prettier, Lint-Staged(Husky) and Sass
+This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky) and Sass
 
 ### Keywords
 - TypeScript
 - TSLint
+- StyleLint
 - Prettier
 - Lint-Staged
 - Styling:SCSS
@@ -11,7 +12,7 @@ This is a standard starter with Typescript, TSLint, Prettier, Lint-Staged(Husky)
 ### Features
 - Category and Tag for post
 - Type Safe by TypeScript
-- Format Safe by TSLint and Prettier with Lint-Staged(Husky)
+- Format Safe by TSLint, StyleLint and Prettier with Lint-Staged(Husky)
 
 ### Deploy to Netlify
 
