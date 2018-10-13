@@ -1,7 +1,7 @@
-import MarkdownRemark from './MarkdownRemark';
+import AllMarkdownRemark from './AllMarkdownRemark';
 
 interface Data {
-  allMarkdownRemark: MarkdownRemark;
+  allMarkdownRemark: AllMarkdownRemark;
 }
 
 export default Data;

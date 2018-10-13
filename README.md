@@ -1,5 +1,5 @@
 ### Description
-Gatsby extends Typescript and SASS
+Gatsby extends Typescript and Styling:SCSS
 
 ### install node modules
 ```yarn install```
