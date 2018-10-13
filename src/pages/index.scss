@@ -1,32 +1,37 @@
 .content {
     .post-wrapper {
-        margin:10px;
         border: 1px solid #F7F7F7;
-        .post{
-            padding:10px;
+        margin:10px;
+
+        .post {
             display:flex;
             flex-wrap: wrap;
             justify-content: flex-start;
+            padding:10px;
+
             h2 {
                 width:100%;
             }
+
             p {
-                margin-right:10px;
                 margin-bottom:5px;
+                margin-right:10px;
             }
     
         }
     
         ul {
             display:flex;
+
             li {
                 list-style: none;
             }
+
             a {
+                background-color:#cecece;
+                border-radius:3px;
                 margin:10px;
                 padding:5px 10px;
-                border-radius:3px;
-                background-color:#cecece;
             }
         }
     }
