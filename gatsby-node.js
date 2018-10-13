@@ -9,7 +9,7 @@ const createClassificationPages = (createPage, posts) => {
         part: path.resolve(`src/templates/Categories.tsx`),
         all: path.resolve(`src/templates/AllCategories.tsx`)
       },
-      postsByClassificationNames: postsByType(posts, "categories")
+      postsByClassificationNames: getPostsByType(posts, "categories")
     },
     {
       singularName: "tag",
@@ -18,7 +18,7 @@ const createClassificationPages = (createPage, posts) => {
         part: path.resolve(`src/templates/Tags.tsx`),
         all: path.resolve(`src/templates/AllTags.tsx`)
       },
-      postsByClassificationNames: postsByType(posts, "tags")
+      postsByClassificationNames: getPostsByType(posts, "tags")
     }
   ]
 
@@ -47,19 +47,19 @@ const createClassificationPages = (createPage, posts) => {
   })
 };
 
-const postsByType = (posts, classificationType) => {
-  const postsByTypes = {}
+const getPostsByType = (posts, classificationType) => {
+  const postsByType = {}
   posts.forEach(({ node }) => {
     if (node.frontmatter[classificationType]) {
       node.frontmatter[classificationType].forEach(name => {
-        if (!postsByTypes[name]) {
-          postsByTypes[name] = [];
+        if (!postsByType[name]) {
+          postsByType[name] = [];
         }
-        postsByTypes[name].push(node);
+        postsByType[name].push(node);
       });
     }
   });
-  return postsByTypes;
+  return postsByType;
 }
 
 exports.createPages = ({ actions, graphql }) => {

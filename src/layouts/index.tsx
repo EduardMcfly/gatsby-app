@@ -4,15 +4,19 @@ import Helmet from 'react-helmet';
 
 import './index.scss';
 
-const Header = () => (
-  <div className="header">
-    <h1>
-      <Link to="/">Gatsby</Link>
-    </h1>
-    <Link to="/categories">Categories</Link>
-    <Link to="/tags">Tags</Link>
-  </div>
-);
+class Header extends React.PureComponent<{}> {
+  public render() {
+    return (
+      <div className="header">
+        <h1>
+          <Link to="/">Gatsby</Link>
+        </h1>
+        <Link to="/categories">Categories</Link>
+        <Link to="/tags">Tags</Link>
+      </div>
+    );
+  }
+}
 
 interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {
   location?: {
