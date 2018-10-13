@@ -11,7 +11,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
-    "fix": "prettier --write \"src/**/*.{ts,tsx,md}\" && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
+    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
   },
   "devDependencies": {
     "@types/react": "^16.4.14",
