@@ -7,6 +7,7 @@ module.exports = {
     'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sass',
+    "gatsby-plugin-manifest",
     {
       resolve: 'gatsby-source-filesystem',
       options: {
