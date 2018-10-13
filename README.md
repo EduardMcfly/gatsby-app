@@ -1,14 +1,17 @@
 ### Description
-Gatsby extends Typescript and Styling:SCSS
+This is a standard starter with Typescript, TSLint, Prettier, Lint-Staged(Husky) and Sass
 
-### install node modules
-```yarn install```
+### Keywords
+    - TypeScript
+    - TSLint
+    - Prettier
+    - Lint-Staged
+    - Styling:SCSS
 
-### develop server
-```yarn run start```
-
-### build for production
-```yarn run build ```
+### Features
+    - Category and Tag for post
+    - Type Safe by TypeScript
+    - Format Safe by TSLint and Prettier with Lint-Staged(Husky)
 
 ### Deploy to Netlify
 
