@@ -1,6 +1,11 @@
 ### Description
 This is a standard starter with Typescript, TSLint, StyleLint, Prettier, Lint-Staged(Husky) and Sass
 
+### new project
+```
+gatsby new project_name https://github.com/ikeryo1182/gatsby-typescript-template
+```
+
 ### Keywords
 - TypeScript
 - TSLint

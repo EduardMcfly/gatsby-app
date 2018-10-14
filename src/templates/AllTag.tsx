@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import './AllTags.scss';
+import './AllTag.scss';
 import PageProps from '../models/PageProps';
 import DefaultLayout from '../layouts';
 
-class AllTagsTemplate extends React.PureComponent<PageProps> {
+class AllTagTemplate extends React.PureComponent<PageProps> {
   public render() {
     const { tags } = this.props.pathContext;
 
@@ -15,13 +15,11 @@ class AllTagsTemplate extends React.PureComponent<PageProps> {
           <div className="all-tags-content">
             <p> Tag List </p>
             <ul>
-              {tags.map((tag: any, index: number) => {
-                return (
-                  <li key={index}>
-                    <Link to={`/tags/${tag}`}>{tag}</Link>
-                  </li>
-                );
-              })}
+              {tags.map((tag: any, index: number) => (
+                <li key={index}>
+                  <Link to={`/tags/${tag}`}>{tag}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         </>
@@ -30,4 +28,4 @@ class AllTagsTemplate extends React.PureComponent<PageProps> {
   }
 }
 
-export default AllTagsTemplate;
+export default AllTagTemplate;

@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import './Tags.scss';
+import './Tag.scss';
 import PageProps from '../models/PageProps';
 import DefaultLayout from '../layouts';
 
-class TagsTemplate extends React.PureComponent<PageProps> {
+class TagTemplate extends React.PureComponent<PageProps> {
   public render() {
     const { posts, tagName } = this.props.pathContext;
 
@@ -15,13 +15,11 @@ class TagsTemplate extends React.PureComponent<PageProps> {
           <span>Posts about {tagName}:</span>
           <ul>
             {posts
-              ? posts.map((post: any, index: number) => {
-                  return (
-                    <li key={index}>
-                      <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-                    </li>
-                  );
-                })
+              ? posts.map((post: any, index: number) => (
+                  <li key={index}>
+                    <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
+                  </li>
+                ))
               : null}
           </ul>
         </div>
@@ -30,4 +28,4 @@ class TagsTemplate extends React.PureComponent<PageProps> {
   }
 }
 
-export default TagsTemplate;
+export default TagTemplate;

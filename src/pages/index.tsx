@@ -27,13 +27,11 @@ class IndexPage extends React.Component<PageProps> {
                     <p>{post.frontmatter.date}</p>
                   </div>
                   <ul key={post.id}>
-                    {post.frontmatter.tags.map((tag, index) => {
-                      return (
-                        <li key={index}>
-                          <Link to={`/tags/${tag}`}>{tag}</Link>
-                        </li>
-                      );
-                    })}
+                    {post.frontmatter.tags.map((tag, index) => (
+                      <li key={index}>
+                        <Link to={`/tags/${tag}`}>{tag}</Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               );

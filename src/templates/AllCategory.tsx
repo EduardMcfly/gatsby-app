@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import './AllCategories.scss';
+import './AllCategory.scss';
 import PageProps from '../models/PageProps';
 import DefaultLayout from '../layouts';
 
-class AllCategoriesTemplate extends React.PureComponent<PageProps> {
+class AllCategoryTemplate extends React.PureComponent<PageProps> {
   public render() {
     const { categories } = this.props.pathContext;
 
@@ -15,13 +15,11 @@ class AllCategoriesTemplate extends React.PureComponent<PageProps> {
           <div className="all-categories-content">
             <p> Category List </p>
             <ul>
-              {categories.map((category: any, index: number) => {
-                return (
-                  <li key={index}>
-                    <Link to={`/categories/${category}`}>{category}</Link>
-                  </li>
-                );
-              })}
+              {categories.map((category: any, index: number) => (
+                <li key={index}>
+                  <Link to={`/categories/${category}`}>{category}</Link>
+                </li>
+              ))}
             </ul>
           </div>
         </>
@@ -30,4 +28,4 @@ class AllCategoriesTemplate extends React.PureComponent<PageProps> {
   }
 }
 
-export default AllCategoriesTemplate;
+export default AllCategoryTemplate;
