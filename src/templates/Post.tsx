@@ -6,7 +6,7 @@ import DefaultLayout from '../layouts';
 
 class PostTemplate extends React.PureComponent<PageProps> {
   public render() {
-    const { pathContext } = this.props; // data.markdownRemark holds our post data
+    const { pathContext } = this.props;
 
     const { post } = pathContext;
 
