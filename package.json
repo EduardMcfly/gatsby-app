@@ -3,6 +3,9 @@
   "description": "gatsyby with typescript and tslint",
   "version": "1.0.0",
   "author": "Ryo Ikeura ( ikeryo1182@gmail.com )",
+  "contributors": [
+    "Eduard Castellanos (admin@cosva.com)"
+  ],
   "keywords": [
     "gatsby, typescript"
   ],
