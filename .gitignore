@@ -1,9 +1,9 @@
 # dependencies
-node_modules
+/node_modules
 yarn-error.log
 .cache/
 .DS_Store
-reduxcache**
+/reduxcache**
 
 # build directory
 public/
