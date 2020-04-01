@@ -1,0 +1,21 @@
+@import 'variables';
+
+$sizes: 0, 1, 2, 3, 4;
+
+$types: (
+  'm': 'margin',
+  'p': 'padding'
+);
+
+@each $type, $style in $types {
+  @each $size in $sizes {
+    .#{$type}-#{$size} {
+      #{$style}: unquote(($spacing * $size)+'px');
+    }
+    @each $prefix, $position in ('t': 'top', 'b': 'bottom', 'l': 'left', 'r': 'right') {
+      .#{$type}#{$prefix}-#{$size} {
+        #{$style}-#{$position}: unquote(($spacing * $size)+'px');
+      }
+    }
+  }
+}
