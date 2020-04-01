@@ -27,7 +27,6 @@
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-typescript": "^2.3.1",
     "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-remark": "^2.7.1",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.9",
     "node-sass": "^4.13.1",
