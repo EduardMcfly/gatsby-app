@@ -1,1 +1,6 @@
-@import './styles/spacing.scss';
+@import './styles/index';
+
+#___gatsby,
+#___gatsby > * {
+  height: 100%;
+}
