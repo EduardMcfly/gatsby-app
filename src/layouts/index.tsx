@@ -11,8 +11,7 @@ class Header extends React.PureComponent<{}> {
         <h1>
           <Link to="/">Gatsby</Link>
         </h1>
-        <Link to="/categories">Categories</Link>
-        <Link to="/tags">Tags</Link>
+        <Link to="/login">Login</Link>
       </div>
     );
   }
